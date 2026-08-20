@@ -1,0 +1,94 @@
+{
+  "sample_id": "SARS-CoV-2_Sample_Query",
+  "sequence_length": 1800,
+  "length": 1800,
+  "qc_metrics": {
+    "header": "SARS-CoV-2_Sample_Query | DEMO_QUERY_2",
+    "sequence_length": 1800,
+    "length": 1800,
+    "gc_percentage": 35.44,
+    "gc_content_percent": 35.44,
+    "a_percentage": 28.06,
+    "t_percentage": 36.5,
+    "g_percentage": 18.5,
+    "c_percentage": 16.94,
+    "at_percentage": 64.56,
+    "at_content_percent": 64.56,
+    "ambiguous_base_count": 0,
+    "ambiguous_count": 0,
+    "ambiguous_percentage": 0.0,
+    "ambiguous_percent": 0.0,
+    "base_counts": {
+      "A": 505,
+      "C": 305,
+      "G": 333,
+      "T/U": 657,
+      "N": 0,
+      "Other Ambiguous": 0
+    },
+    "base_percentages": {
+      "A": 28.06,
+      "C": 16.94,
+      "G": 18.5,
+      "T/U": 36.5,
+      "N": 0.0,
+      "Other Ambiguous": 0.0
+    },
+    "status": "PASS",
+    "qc_status": "PASS",
+    "warnings": [
+      "Sequence passed all computational quality control thresholds."
+    ],
+    "rules_applied": {
+      "min_length_threshold_bp": 100,
+      "max_ambiguous_threshold_percent": 5.0,
+      "gc_plausibility_range_percent": [
+        20.0,
+        80.0
+      ]
+    },
+    "disclaimer": "COMPUTATIONAL QUALITY CONTROL ONLY: Metrics are technical sequencing quality checkpoints for analytical bioinformatics research. They are NOT clinical diagnostic tests and MUST NOT be used for medical diagnosis, clinical evaluation, or therapeutic decision-making."
+  },
+  "predicted_class": "SARS-CoV-2",
+  "model_version": "1.0.0-demo",
+  "prediction_probabilities": {
+    "Dengue virus": 0.0003,
+    "Escherichia coli": 0.0002,
+    "Influenza A virus": 0.0001,
+    "Mycobacterium tuberculosis": 0.0,
+    "SARS-CoV-2": 0.9991,
+    "Staphylococcus aureus": 0.0003
+  },
+  "class_probabilities": {
+    "Dengue virus": 0.0003,
+    "Escherichia coli": 0.0002,
+    "Influenza A virus": 0.0001,
+    "Mycobacterium tuberculosis": 0.0,
+    "SARS-CoV-2": 0.9991,
+    "Staphylococcus aureus": 0.0003
+  },
+  "confidence_score": 0.9991257557436347,
+  "confidence_percent": "99.91%",
+  "top_3_predictions": [
+    [
+      "SARS-CoV-2",
+      0.9991
+    ],
+    [
+      "Dengue virus",
+      0.0003
+    ],
+    [
+      "Staphylococcus aureus",
+      0.0003
+    ]
+  ],
+  "best_model_name": "Logistic Regression",
+  "timestamp": "2026-08-19T23:08:00.864954",
+  "evidence_label": "COMPUTATIONAL PREDICTION EVIDENCE \u2014 IN-SILICO STATISTICAL ESTIMATE",
+  "evidence_type": "computational_in_silico_evidence",
+  "is_computational_evidence": true,
+  "is_demo_model": true,
+  "demo_banner": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED",
+  "disclaimer": "DEMONSTRATION ML CLASSIFIER FOR COMPUTATIONAL BIOINFORMATICS RESEARCH ONLY. NOT FOR CLINICAL DIAGNOSIS OR THERAPEUTIC APPLICATION."
+}

@@ -1,0 +1,393 @@
+{
+  "demo_banner": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED",
+  "is_demo_model": true,
+  "best_model_name": "Random Forest",
+  "classes": [
+    "Dengue virus",
+    "Escherichia coli",
+    "Influenza A virus",
+    "Monkeypox virus",
+    "Mycobacterium tuberculosis",
+    "SARS-CoV-2",
+    "Staphylococcus aureus"
+  ],
+  "k_list": [
+    3,
+    4
+  ],
+  "num_features": 320,
+  "split_sizes": {
+    "train": 252,
+    "validation": 84,
+    "test": 84
+  },
+  "dataset_metadata": {
+    "source_type": "synthetic_demonstration",
+    "dataset_path": "synthetic_in_memory",
+    "is_synthetic": true,
+    "class_counts": {
+      "Influenza A virus": 60,
+      "SARS-CoV-2": 60,
+      "Dengue virus": 60,
+      "Escherichia coli": 60,
+      "Staphylococcus aureus": 60,
+      "Mycobacterium tuberculosis": 60,
+      "Monkeypox virus": 60
+    },
+    "total_samples": 420,
+    "classes": [
+      "Dengue virus",
+      "Escherichia coli",
+      "Influenza A virus",
+      "Monkeypox virus",
+      "Mycobacterium tuberculosis",
+      "SARS-CoV-2",
+      "Staphylococcus aureus"
+    ],
+    "disclaimer": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED. Synthetic demonstration sequence profiles."
+  },
+  "validation_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.9524,
+      "precision": 0.9551,
+      "recall": 0.9524,
+      "f1_score": 0.952,
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          11
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.9762,
+      "precision": 0.9762,
+      "recall": 0.9762,
+      "f1_score": 0.9762,
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          11
+        ]
+      ]
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.9643,
+      "precision": 0.965,
+      "recall": 0.9643,
+      "f1_score": 0.9642,
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          11
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9405,
+    "precision": 0.9411,
+    "recall": 0.9405,
+    "f1_score": 0.9404,
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        10
+      ]
+    ],
+    "classification_report": {
+      "Dengue virus": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Escherichia coli": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Influenza A virus": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Monkeypox virus": {
+        "precision": 0.8181818181818182,
+        "recall": 0.75,
+        "f1-score": 0.782608695652174,
+        "support": 12.0
+      },
+      "Mycobacterium tuberculosis": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "SARS-CoV-2": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Staphylococcus aureus": {
+        "precision": 0.7692307692307693,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8,
+        "support": 12.0
+      },
+      "accuracy": 0.9404761904761905,
+      "macro avg": {
+        "precision": 0.9410589410589411,
+        "recall": 0.9404761904761905,
+        "f1-score": 0.9403726708074533,
+        "support": 84.0
+      },
+      "weighted avg": {
+        "precision": 0.941058941058941,
+        "recall": 0.9404761904761905,
+        "f1-score": 0.9403726708074535,
+        "support": 84.0
+      }
+    }
+  },
+  "disclaimer": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED. This software prototype was evaluated on demonstration sequence profiles for software testing only. Predictions do NOT constitute real biological or pathogen identification, and MUST NOT be used for clinical diagnosis, medical evaluation, or therapeutic decision-making."
+}

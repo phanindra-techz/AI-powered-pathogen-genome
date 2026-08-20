@@ -1,0 +1,94 @@
+{
+  "sample_id": "E_Coli_Isolate_K12",
+  "sequence_length": 255,
+  "length": 255,
+  "qc_metrics": {
+    "header": "E_Coli_Isolate_K12 K-12 benchmark sequencing run",
+    "sequence_length": 255,
+    "length": 255,
+    "gc_percentage": 40.78,
+    "gc_content_percent": 40.78,
+    "a_percentage": 33.73,
+    "t_percentage": 25.49,
+    "g_percentage": 18.43,
+    "c_percentage": 22.35,
+    "at_percentage": 59.22,
+    "at_content_percent": 59.22,
+    "ambiguous_base_count": 0,
+    "ambiguous_count": 0,
+    "ambiguous_percentage": 0.0,
+    "ambiguous_percent": 0.0,
+    "base_counts": {
+      "A": 86,
+      "C": 57,
+      "G": 47,
+      "T/U": 65,
+      "N": 0,
+      "Other Ambiguous": 0
+    },
+    "base_percentages": {
+      "A": 33.73,
+      "C": 22.35,
+      "G": 18.43,
+      "T/U": 25.49,
+      "N": 0.0,
+      "Other Ambiguous": 0.0
+    },
+    "status": "PASS",
+    "qc_status": "PASS",
+    "warnings": [
+      "Sequence passed all computational quality control thresholds."
+    ],
+    "rules_applied": {
+      "min_length_threshold_bp": 100,
+      "max_ambiguous_threshold_percent": 5.0,
+      "gc_plausibility_range_percent": [
+        20.0,
+        80.0
+      ]
+    },
+    "disclaimer": "COMPUTATIONAL QUALITY CONTROL ONLY: Metrics are technical sequencing quality checkpoints for analytical bioinformatics research. They are NOT clinical diagnostic tests and MUST NOT be used for medical diagnosis, clinical evaluation, or therapeutic decision-making."
+  },
+  "predicted_class": "Escherichia coli",
+  "model_version": "1.0.0-demo",
+  "prediction_probabilities": {
+    "Dengue virus": 0.0028,
+    "Escherichia coli": 0.9367,
+    "Influenza A virus": 0.0492,
+    "Mycobacterium tuberculosis": 0.0001,
+    "SARS-CoV-2": 0.0018,
+    "Staphylococcus aureus": 0.0094
+  },
+  "class_probabilities": {
+    "Dengue virus": 0.0028,
+    "Escherichia coli": 0.9367,
+    "Influenza A virus": 0.0492,
+    "Mycobacterium tuberculosis": 0.0001,
+    "SARS-CoV-2": 0.0018,
+    "Staphylococcus aureus": 0.0094
+  },
+  "confidence_score": 0.9366959770773351,
+  "confidence_percent": "93.67%",
+  "top_3_predictions": [
+    [
+      "Escherichia coli",
+      0.9367
+    ],
+    [
+      "Influenza A virus",
+      0.0492
+    ],
+    [
+      "Staphylococcus aureus",
+      0.0094
+    ]
+  ],
+  "best_model_name": "Logistic Regression",
+  "timestamp": "2026-08-20T11:29:59.519214",
+  "evidence_label": "COMPUTATIONAL PREDICTION EVIDENCE - IN-SILICO STATISTICAL ESTIMATE",
+  "evidence_type": "computational_in_silico_evidence",
+  "is_computational_evidence": true,
+  "is_demo_model": true,
+  "demo_banner": "DEMONSTRATION MODEL - NOT CLINICALLY VALIDATED",
+  "disclaimer": "DEMONSTRATION ML CLASSIFIER FOR COMPUTATIONAL BIOINFORMATICS RESEARCH ONLY. NOT FOR CLINICAL DIAGNOSIS OR THERAPEUTIC APPLICATION."
+}

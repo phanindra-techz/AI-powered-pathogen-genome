@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local SQLite Database
+data/pathogen_intelligence.db
+data/pathogen_intelligence.db-wal
+data/pathogen_intelligence.db-shm
+
+# Reports generated during ad-hoc testing
+reports/*.pdf
+reports/*.json
+reports/*.csv
+!data/raw/
+!data/reference/

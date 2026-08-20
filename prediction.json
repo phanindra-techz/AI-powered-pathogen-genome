@@ -1,0 +1,96 @@
+{
+  "sample_id": "NC_063383.1",
+  "sequence_length": 4800,
+  "length": 4800,
+  "qc_metrics": {
+    "header": "NC_063383.1 Monkeypox virus isolate Zaire-96-I-16, complete genome",
+    "sequence_length": 4800,
+    "length": 4800,
+    "gc_percentage": 28.15,
+    "gc_content_percent": 28.15,
+    "a_percentage": 36.35,
+    "t_percentage": 35.5,
+    "g_percentage": 13.44,
+    "c_percentage": 14.71,
+    "at_percentage": 71.85,
+    "at_content_percent": 71.85,
+    "ambiguous_base_count": 0,
+    "ambiguous_count": 0,
+    "ambiguous_percentage": 0.0,
+    "ambiguous_percent": 0.0,
+    "base_counts": {
+      "A": 1745,
+      "C": 706,
+      "G": 645,
+      "T/U": 1704,
+      "N": 0,
+      "Other Ambiguous": 0
+    },
+    "base_percentages": {
+      "A": 36.35,
+      "C": 14.71,
+      "G": 13.44,
+      "T/U": 35.5,
+      "N": 0.0,
+      "Other Ambiguous": 0.0
+    },
+    "status": "PASS",
+    "qc_status": "PASS",
+    "warnings": [
+      "Sequence passed all computational quality control thresholds."
+    ],
+    "rules_applied": {
+      "min_length_threshold_bp": 100,
+      "max_ambiguous_threshold_percent": 5.0,
+      "gc_plausibility_range_percent": [
+        20.0,
+        80.0
+      ]
+    },
+    "disclaimer": "COMPUTATIONAL QUALITY CONTROL ONLY: Metrics are technical sequencing quality checkpoints for analytical bioinformatics research. They are NOT clinical diagnostic tests and MUST NOT be used for medical diagnosis, clinical evaluation, or therapeutic decision-making."
+  },
+  "predicted_class": "Staphylococcus aureus",
+  "model_version": "1.0.0-demo",
+  "prediction_probabilities": {
+    "Dengue virus": 0.0,
+    "Escherichia coli": 0.0,
+    "Influenza A virus": 0.0,
+    "Monkeypox virus": 0.43,
+    "Mycobacterium tuberculosis": 0.0,
+    "SARS-CoV-2": 0.0,
+    "Staphylococcus aureus": 0.57
+  },
+  "class_probabilities": {
+    "Dengue virus": 0.0,
+    "Escherichia coli": 0.0,
+    "Influenza A virus": 0.0,
+    "Monkeypox virus": 0.43,
+    "Mycobacterium tuberculosis": 0.0,
+    "SARS-CoV-2": 0.0,
+    "Staphylococcus aureus": 0.57
+  },
+  "confidence_score": 0.57,
+  "confidence_percent": "57.00%",
+  "top_3_predictions": [
+    [
+      "Staphylococcus aureus",
+      0.57
+    ],
+    [
+      "Monkeypox virus",
+      0.43
+    ],
+    [
+      "Dengue virus",
+      0.0
+    ]
+  ],
+  "best_model_name": "Random Forest",
+  "timestamp": "2026-08-20T12:26:45.111480",
+  "evidence_label": "COMPUTATIONAL PREDICTION EVIDENCE - IN-SILICO STATISTICAL ESTIMATE",
+  "evidence_type": "computational_in_silico_evidence",
+  "is_computational_evidence": true,
+  "is_demo_model": true,
+  "demo_banner": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED",
+  "disclaimer": "DEMONSTRATION MODEL \u2014 NOT CLINICALLY VALIDATED. This software prototype was evaluated on demonstration sequence profiles for software testing only. Predictions do NOT constitute real biological or pathogen identification, and MUST NOT be used for clinical diagnosis, medical evaluation, or therapeutic decision-making."
+}

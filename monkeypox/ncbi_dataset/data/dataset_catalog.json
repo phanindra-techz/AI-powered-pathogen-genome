@@ -1,0 +1,23 @@
+{
+  "version": "v1",
+  "assemblies": [
+    {
+      "accession": "NC_063383.1",
+      "files": [
+        {
+          "filePath": "ncbi_dataset/data/genomic.fna",
+          "fileType": "GENOMIC_NUCLEOTIDE_FASTA"
+        }
+      ]
+    },
+    {
+      "accession": "ON563414.3",
+      "files": [
+        {
+          "filePath": "ncbi_dataset/data/genomic.fna",
+          "fileType": "GENOMIC_NUCLEOTIDE_FASTA"
+        }
+      ]
+    }
+  ]
+}
