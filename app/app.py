@@ -884,6 +884,17 @@ def execute_full_pipeline(
 
         # Auto-generate PDF report into reports directory
         try:
+            figures_for_pdf = {
+                "base_composition": plot_base_composition_bar(qc),
+                "gc_indicator": plot_gc_indicator(qc["gc_percentage"]),
+                "genome_length": plot_genome_length_display(qc["sequence_length"]),
+                "model_performance": plot_model_performance_chart(),
+                "confusion_matrix": plot_confusion_matrix_heatmap(),
+                "prediction_probs": plot_prediction_probability_chart(pred["prediction_probabilities"]),
+            }
+            if ref and ref.get("rankings"):
+                figures_for_pdf["ref_similarity"] = plot_reference_similarity_ranking_chart(ref["dataframe"])
+
             pdf_sample_name = (st.session_state.sample_id or "Sample_Query").replace(" ", "_").replace("/", "_")
             custom_pdf_filename = f"report_{current_analysis_id}_{pdf_sample_name}.pdf"
             generate_pdf_report(
@@ -892,7 +903,8 @@ def execute_full_pipeline(
                 ref_results=ref,
                 output_dir=os.path.join(BASE_DIR, "reports"),
                 filename=custom_pdf_filename,
-                sample_id=st.session_state.sample_id or "Sample_Query"
+                sample_id=st.session_state.sample_id or "Sample_Query",
+                figures=figures_for_pdf
             )
             # Also update primary analysis_report.pdf
             generate_pdf_report(
@@ -901,7 +913,8 @@ def execute_full_pipeline(
                 ref_results=ref,
                 output_dir=os.path.join(BASE_DIR, "reports"),
                 filename="analysis_report.pdf",
-                sample_id=st.session_state.sample_id or "Sample_Query"
+                sample_id=st.session_state.sample_id or "Sample_Query",
+                figures=figures_for_pdf
             )
         except Exception as e:
             pass
